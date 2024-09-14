@@ -1,0 +1,6 @@
+<h2>Doctors Available</h2>
+<ul>
+    {% for doctor in doctors %}
+    <li>{{ doctor.user.get_full_name }} - Specialization: {{ doctor.specialization }}</li>
+    {% endfor %}
+</ul>

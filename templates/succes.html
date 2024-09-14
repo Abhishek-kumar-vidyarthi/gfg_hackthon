@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Success</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'succes.css' %}"> <!-- Reference to your CSS file -->
+</head>
+<body>
+    <div class="success-container">
+        <h2>Your Appointment has been Successfully Booked!</h2>
+        <p>Thank you for booking an appointment with us. You will receive a confirmation email shortly.</p>
+        <a href="{% url 'home' %}">Return to Home Page</a>
+    </div>
+</body>
+</html>
